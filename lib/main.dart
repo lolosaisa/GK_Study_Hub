@@ -38,7 +38,9 @@ class MyHomePage extends StatelessWidget {
               ]),
         ),
         child: Column(
-          children: <Widget>[Navbar(), LandingPage()],
+          children: <Widget>[
+            Navbar(), /*LandingPage()*/
+          ],
         ),
       ),
     );

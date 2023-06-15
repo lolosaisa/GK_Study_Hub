@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:generalkagoprimary/pages/login_page.dart';
 
 class Navbar extends StatelessWidget {
   @override
@@ -53,6 +54,22 @@ class DesktopNavbar extends StatelessWidget {
                 const Text(
                   "Portfolio",
                   style: TextStyle(color: Colors.white),
+                ),
+                const SizedBox(
+                  width: 20,
+                ),
+                MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => LoginPage()));
+                  },
+                  color: Colors.green,
+                  shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                  child: const Text(
+                    "Log In",
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ),
                 const SizedBox(
                   width: 20,
