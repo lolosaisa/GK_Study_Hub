@@ -62,7 +62,9 @@ flutter:
   assets:
 
     - Assets/images/the best.jpg
+    - Assets/images/google2.jpg
     - Assets/images/logo.PNG
+    - Assets/images/green2.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:generalkagoprimary/pages/login_page.dart';
+import 'package:generalkagoprimary/pages/signin_page.dart';
 
 class Navbar extends StatelessWidget {
   @override
@@ -75,7 +76,10 @@ class DesktopNavbar extends StatelessWidget {
                   width: 20,
                 ),
                 MaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => SigninPage()));
+                  },
                   color: Colors.green,
                   shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10))),

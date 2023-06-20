@@ -3,8 +3,8 @@ import 'package:generalkagoprimary/components/my_button.dart';
 import 'package:generalkagoprimary/components/my_textfield.dart';
 import 'package:generalkagoprimary/components/square_tile.dart';
 
-class LoginPage extends StatelessWidget {
-  LoginPage({super.key});
+class SigninPage extends StatelessWidget {
+  SigninPage({super.key});
 
   //add the text editing controllers
   final usernameController = TextEditingController();
@@ -51,7 +51,7 @@ class LoginPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                'Welcome Back you\'ve been missed!!',
+                'Welcome to GK Study Hub',
                 style: TextStyle(
                     fontSize: 15,
                     color: Colors.grey[700],
@@ -64,7 +64,7 @@ class LoginPage extends StatelessWidget {
             //add the username text field
             MyTextField(
               Controller: usernameController,
-              hintText: 'Enter your Username// Password',
+              hintText: 'Enter your Username',
               obscureText: false,
             ),
             //add the password text field
@@ -76,18 +76,16 @@ class LoginPage extends StatelessWidget {
               hintText: 'Enter Your PassWord',
               obscureText: true,
             ),
-            Padding(
-              padding: const EdgeInsets.all(20),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Text(
-                    'Forgot PassWord?',
-                    style: TextStyle(color: Colors.grey[600]),
-                  ),
-                ],
-              ),
+            const SizedBox(
+              height: 10,
             ),
+
+            MyTextField(
+              Controller: passwordController,
+              hintText: 'Confirm Your Password',
+              obscureText: true,
+            ),
+
             const SizedBox(
               height: 10,
             ),
