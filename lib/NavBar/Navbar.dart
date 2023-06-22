@@ -98,6 +98,8 @@ class DesktopNavbar extends StatelessWidget {
 }
 
 class MobileNavbar extends StatelessWidget {
+  const MobileNavbar({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Padding(

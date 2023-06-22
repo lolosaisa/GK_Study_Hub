@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:generalkagoprimary/LandingPage/LandingPage.dart';
 import 'package:generalkagoprimary/NavBar/Navbar.dart';
-import 'package:generalkagoprimary/LandingPage/Landingpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,9 +38,7 @@ class MyHomePage extends StatelessWidget {
               ]),
         ),
         child: Column(
-          children: <Widget>[
-            Navbar(), /*LandingPage()*/
-          ],
+          children: <Widget>[Navbar(), LandingPage()],
         ),
       ),
     );
